@@ -21,6 +21,5 @@ pip install -r requirements.txt
 ## Run steamlit app
 
 ```conda
-cd dashboard
-streamlit run dashboard.py
+streamlit run dashboard/dashboard.py
 ```
