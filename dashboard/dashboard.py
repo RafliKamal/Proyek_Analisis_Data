@@ -62,4 +62,4 @@ with col_chart2:
     ax2.set_ylabel("Jumlah Jam")
     st.pyplot(fig2)
 
-st.caption("Hak Cipta © Proyek Analisis Data - Dicoding 2024")
+st.caption("Proyek Analisis Data - Dicoding - Muhamad Rafli Kamal")
