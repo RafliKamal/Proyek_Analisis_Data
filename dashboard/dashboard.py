@@ -8,8 +8,9 @@ st.set_page_config(page_title="Changping Air Quality Dashboard", layout="wide")
 # Load data hasil cleaning
 @st.cache_data
 def load_data():
-    df = pd.read_csv("main_data.csv")
+    df = pd.read_csv("dashboard/main_data.csv") 
     df['datetime'] = pd.to_datetime(df['datetime'])
+    
     # Re-apply binning for dashboard
     bins = [0, 35, 75, 150, df['PM2.5'].max()]
     labels = ['Baik', 'Sedang', 'Tidak Sehat', 'Berbahaya']
